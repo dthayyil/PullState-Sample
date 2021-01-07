@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body,
+html,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.app {
+  font-family: Quicksand;
+  text-align: center;
+  height: 100vh;
+  padding: 1em;
+  transition: background 0.15s ease-in-out, color 0.15s ease-in-out;
+
+  h1 {
+    padding: 1em;
+    font-size: 2.2em;
+    color: rgb(17, 233, 125);
+    letter-spacing: 0.05em;
+  }
+
+  .link {
+    display: block;
+    margin-top: 2em;
+  }
+
+  code {
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+  }
+
+  &.light {
+    code {
+      background: rgb(229, 229, 236);
+      color: rgb(35, 202, 71);
+    }
+    background-color: white;
+    color: black;
+  }
+
+  &.dark {
+    a {
+      color: white;
+    }
+    code {
+      background: rgb(76, 76, 83);
+    }
+
+    background-color: rgb(39, 38, 41);
+    color: white;
+  }
+
+  .button-area {
+    button {
+      background: rgb(163, 226, 255);
+      cursor: pointer;
+      padding: 1em;
+      margin: 1em;
+      font-family: Roboto;
+      font-weight: 700;
+      border: none;
+      border-radius: 0.5em;
+      user-select: none;
+      box-shadow: 0 5px 0 rgb(112, 182, 209);
+      filter: drop-shadow(0 0.2em 0.2em rgba(112, 124, 158, 0.3));
+
+      &:hover {
+        background: rgb(193, 234, 255);
+      }
+      // text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 1em;
+      font-size: 1.2em;
+      color: rgb(43, 188, 255);
+    }
+  }
+
+  .theme-icon {
+    padding: 2em;
+    opacity: 0.65;
+    transition: filter 0.4s ease-in-out, transform 0.6s ease-in-out;
+
+    &.dark {
+      color: rgb(148, 133, 228);
+      filter: drop-shadow(0 -0.4em 0.3em rgba(0, 0, 0, 0.9));
+      transform: translateY(20%);
+    }
+
+    &.light {
+      color: rgb(243, 150, 11);
+      filter: drop-shadow(0 0.7em 0.3em rgba(251, 255, 0, 0.8));
+      transform: translateY(-10%);
+    }
+
+    svg {
+      width: 6em;
+      height: 6em;
+    }
+  }
+}
